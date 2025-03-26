@@ -1,0 +1,100 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UE-L114 Projet final</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Niveau et thèmes</legend>
+        <p>
+          <h3>Niveau</h3>
+          <select name="niveaux" id="niveaux-select">
+            <option value="">--Choisir un niveau--</option>
+            <option value="6e">Sixième</option>
+            <option value="5e">Cinquième</option>
+            <option value="4e">Quatrième</option>
+            <option value="3e">Troisième</option>
+            <option value="2de">Seconde</option>
+            <option value="1re">Première (spé)</option>
+            <option value="Tle">Terminale (spé)</option>
+          </select>
+        </p>
+        <p>
+          <h3>Thèmes</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="geo-thales" name="themes" value="geo-thales" checked />
+              <label for="geo-thales">Géométrie : théorème de Thalès</label>
+            </li>
+            <li>
+              <input type="checkbox" id="geo-pythagore" name="themes" value="geo-pythagore" />
+              <label for="geo-pythagore">Géométrie : théorème de Pythagore </label>
+            </li>
+            <li>
+              <input type="checkbox" id="geo-espace" name="themes" value="geo-espace" />
+              <label for="geo-espace">Géométrie : espace</label>
+            </li>
+          </ul>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Confection de la formule</legend>
+        <p>
+          <h3>Cours</h3>
+          <ul>
+            <li>
+              <input type="radio" id="cours-oui" name="cours" value="cours-oui" checked />
+              <label for="cours-oui">Oui</label>
+            </li>
+            <li>
+              <input type="radio" id="cours-non" name="cours" value="cours-non" />
+              <label for="cours-non">Non</label>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <h3>Type de cours</h3>
+          <ul>
+            <li>
+              <input type="checkbox" id="type-cours-carte" name="type-cours" value="type-cours-carte" checked />
+              <label for="type-cours-carte">Carte mentale</label>
+            </li>
+            <li>
+              <input type="checkbox" id="type-cours-resume" name="type-cours" value="type-cours-resume" />
+              <label for="type-cours-resume">Résumé</label>
+            </li>
+            <li>
+              <input type="checkbox" id="type-cours-complet" name="type-cours" value="type-cours-complet" />
+              <label for="type-cours-complet">Cours complet</label>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <h3>Difficulté</h3>
+          <div>
+            <label for="difficulte">Difficulté</label>
+            <input type="range" id="difficulte" name="difficulte" min="1" max="3" />
+          </div>
+        </p>
+        <p>
+          <h3>Fréquence</h3>
+          <div>
+            <label for="frequence">Recevoir des exercices tous les </label>
+            <input type="number" id="frequence" name="frequence" min="1" max="7" /><span> jours</span>
+          </div>
+        </p>
+        <p>
+          <h3>Date de fin</h3>
+          <label for="date-fin">Je souhaite terminer mon programme le </label>
+          <input type="date" name="date-fin" id="date-fin">
+        </p>
+        <p>
+          <h3>Montant</h3>
+          <div>13€</div>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
